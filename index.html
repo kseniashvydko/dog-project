@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>услуги кинолога</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="wrapper">
+    <header class="header" >
+        <div class="container">
+            <div class="header__inner">
+                <a class="logo" href="#">
+                    <img class="logo__img" src="/dog-project/img_dogs/header/logo.svg" alt="">
+                </a>
+                <nav class="menu">
+                    <ul class="menu__list">
+                        <li class="menu__item"><a class="menu__list-link" href="#reasons-id">Причины дрессировки</a></li>
+                        <li class="menu__item"><a class="menu__list-link" href="#benefit-id">С кинологом лучше</a></li>
+                        <li class="menu__item"><a class="menu__list-link" href="#advantages-id">Почему я</a></li>
+                        <li class="menu__item"><a class="menu__list-link" href="#stages-id">Этапы дрессировки</a></li>
+                        <li class="menu__item"><a class="menu__list-link" href="#reviews-id">Отзывы</a></li>
+                        <li class="menu__item"><a class="menu__list-link" href="#program-id">Чему обучю</a></li>
+                        <li class="menu__item"><a class="menu__list-link" href="#faq-id">Частые вопросы</a></li>
+                    </ul>
+                    <button class="menu__btn">
+                        <span class="menu__btn-span"></span>
+                        <span class="menu__btn-span"></span>
+                        <span class="menu__btn-span"></span>
+                    </button>
+                    <ul class="menu__mobile menu--open ">
+                        <li class="menu__item link-mobile"><a class="menu__list-link " href="#reasons-id">Причины дрессировки</a></li>
+                        <li class="menu__item link-mobile"><a class="menu__list-link " href="#benefit-id">С кинологом лучше</a></li>
+                        <li class="menu__item link-mobile"><a class="menu__list-link" href="#advantages-id">Почему я</a></li>
+                        <li class="menu__item link-mobile"><a class="menu__list-link" href="#stages-id">Этапы дрессировки</a></li>
+                        <li class="menu__item link-mobile"><a class="menu__list-link" href="#reviews-id">Отзывы</a></li>
+                        <li class="menu__item link-mobile"><a class="menu__list-link " href="#program-id">Чему обучю</a></li>
+                        <li class="menu__item link-mobile"><a class="menu__list-link " href="#faq-id">Частые вопросы</a></li>
+                    </ul>
+                </nav>
+                <div class="header__icons">
+                    <a class="header__icon" href="#">
+                        <img class="header__icon-img" src="/dog-project/img_dogs/header/instagram.svg" alt="">
+                    </a>
+                    <a class="header__icon" href="#">
+                        <img class="header__icon-img" src="/dog-project/img_dogs/header/vk.svg" alt="">
+                    </a>
+                    <a class="header__icon" href="#">
+                        <img class="header__icon-img" src="/dog-project/img_dogs/header/f.svg" alt="">
+                    </a>
+                    <a class="header__icon" href="#">
+                        <img class="header__icon-img" src="/dog-project/img_dogs/header/Vector.svg" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="top">
+        <div class="container">
+            <div class="top__inner">
+                <div class="top__header">
+                    <h1 class="top__header-title">
+                        <span class="top__header-title-span">1 час</span> занятий с любимцем, под руководством кинолога
+                    </h1>
+                    <p class="top__header-p">Сохранят нервные клетки и порядок в доме</p>
+                    <button class="top__header-button open-modal-btn">Стать учителем четвероного друга</button>
+                </div>
+                <div class="top__image">
+                    <img class="top__img" src="/dog-project/img_dogs/header/back-img.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="modal" id="my-modal">
+        <div class="modal__box">
+            <button class="modal__close-btn" id="close-my-modal-btn">
+                <svg width="23" height="25" viewBox="0 0 23 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2.09082 0.03125L22.9999 22.0294L20.909 24.2292L-8.73579e-05 2.23106L2.09082 0.03125Z"
+                        fill="#333333" />
+                    <path d="M0 22.0295L20.9091 0.0314368L23 2.23125L2.09091 24.2294L0 22.0295Z" fill="#333333" />
+                </svg>
+            </button>
+            <div class="modal__form">
+                <div class="modal__text">
+                    <h2 class="modal__text-title">Консультация</h2>
+                </div>
+                <div class="modal__inputs" action="#" novalidate>
+                    <input class="modal__input" id="modal-name" type="text" name="name" placeholder="Ваше имя">
+                    <input class="modal__input" id="modal-email" type="email" name="email" placeholder="Адрес доставки">
+                    <input class="modal__input modal-tel" id="tel" type="tel" name="phone" placeholder="+7(___)___-__-__">
+                </div>
+                <button class="modal__btn"><a class="modal__btn-link" href="#">Отправить</a></button>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal modal-form" id="my-modal-form">
+        <div class="modal__box">
+            <button class="modal__close-btn" id="close-my-modal-btn-form">
+                <svg width="23" height="25" viewBox="0 0 23 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2.09082 0.03125L22.9999 22.0294L20.909 24.2292L-8.73579e-05 2.23106L2.09082 0.03125Z"
+                        fill="#333333" />
+                    <path d="M0 22.0295L20.9091 0.0314368L23 2.23125L2.09091 24.2294L0 22.0295Z" fill="#333333" />
+                </svg>
+            </button>
+            <div class="modal__form">
+                <div class="modal__inputs" action="#" novalidate>
+                    <img src="/dog-project/img_dogs/icons/check-img.svg">
+                </div>
+                <p class="modal__text-p">Ваша заявка принята</p>
+                
+            </div>
+        </div>
+    </div>
+    
+    <section class="expertise">
+        <div class="container">
+            <div class="expertise__items">
+                <div class="expertise__item">
+                    <h2 class="expertise__item-title">100 людей</h2>
+                    <div class="expertise__item-text">Обучились  дрессировать своих питомцев</div>
+                </div>
+                <div class="expertise__item">
+                    <h2 class="expertise__item-title">200 собак</h2>
+                    <div class="expertise__item-text">Начали понимать команды</div>
+                </div>
+                <div class="expertise__item">
+                    <h2 class="expertise__item-title">2600 часов</h2>
+                    <div class="expertise__item-text">Общения</div>
+                </div>
+                <div class="expertise__item">
+                    <h2 class="expertise__item-title">10 лет</h2>
+                    <div class="expertise__item-text">Посвятила собакам</div>
+                </div>
+            </div>
+        </div>
+    </section>
+   
+    <section class="reasons" id="reasons-id">
+        <div class="container">
+            <h2 class="reasons__title">
+                Причины дрессировать собаку
+            </h2>
+            <div class="reasons__boxes">
+                <div class="reasons__box">
+                    <img class="reasons__box-img" src="/dog-project/img_dogs/icons/icon-cat.svg" alt="">
+                    <p class="reasons__box-text">Гонится за животными</p>
+                </div>
+                <div class="reasons__box">
+                    <img class="reasons__box-img" src="/dog-project/img_dogs/icons/icon-ball.svg" alt="">
+                    <p class="reasons__box-text">Роняет вещи</p>
+                </div>
+                <div class="reasons__box">
+                    <img class="reasons__box-img" src="/dog-project/img_dogs/icons/icon-dog.svg" alt="">
+                    <p class="reasons__box-text">Грызёт мебель</p>
+                </div>
+                <div class="reasons__box">
+                    <img class="reasons__box-img" src="/dog-project/img_dogs/icons/icon-pow.svg" alt="">
+                    <p class="reasons__box-text">Сдирает обои</p>
+                </div>
+                <div class="reasons__box">
+                    <img class="reasons__box-img" src="/dog-project/img_dogs/icons/icon-leash.svg" alt="">
+                    <p class="reasons__box-text">Натянутый поводок</p>
+                </div>
+                <div class="reasons__box">
+                    <img class="reasons__box-img" src="/dog-project/img_dogs/icons/icon-poop.svg" alt="">
+                    <p class="reasons__box-text">Не ходит в лоток</p>
+                </div>
+                <div class="reasons__box">
+                    <img class="reasons__box-img" src="/dog-project/img_dogs/icons/icon-angry.svg" alt="">
+                    <p class="reasons__box-text">Лает на людей</p>
+                </div>
+                <div class="reasons__box">
+                    <img class="reasons__box-img" src="/dog-project/img_dogs/icons/icon-last.svg" alt="">
+                    <p class="reasons__box-text">Берет все в рот</p>
+                </div>
+            </div>
+        </div>
+    </section>
+     
+    <section class="benefit" id="benefit-id">
+        <div class="container">
+            <h2 class="benefit__title">
+                С кинологом лучше
+            </h2>
+            <div class="benefit__items">
+                <div class="benefit__item">
+                    <div class="benefit__item-title">
+                        Опыт работы
+                    </div>
+                    <p class="benefit__item-text tex1">Благодаря многолетнему опыту кинологи легко могут заметить недостаточно чёткие жесты, противоречивые команды или несвоевременное подкрепление. Так же вы не окажитесь в тупике, не зная, как разрешить ту или иную ситуацию. Профессионал подскажет простой выход из неё.</p>
+                </div>
+                <div class="benefit__item">
+                    <div class="benefit__item-title">
+                        Экономия времени
+                    </div>
+                    <p class="benefit__item-text text2">На поиски нужной информации не уходят недели. 1 час занятий и команда лежать уже выучена.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="advantages" id="advantages-id">
+        <div class="container">
+            <h2 class="advantages__title">
+                Почему я
+            </h2>
+            <div class="advantages__boxes">
+                <div class="advantages__box first__box">
+                    <div class="advantages__box-title">
+                        Обучаю всех
+                    </div>
+                    <p class="advantages__box-text-color">Обучаю владельцев, и их питомцев</p>
+                    <p class="advantages__box-text">Возраст владельцев не важен. Щенков приучать начинаю с 4 месяцев</p>
+                </div>
+                <div class="advantages__box second__box">
+                    <div class="advantages__box-title">
+                        К каждой собаке свой подход
+                    </div>
+                    <p class="advantages__box-text-color">Узнаю сколько питомцу
+                        Был ли опыт в дрессировке</p>
+                    <p class="advantages__box-text">
+                        Если был, то я обязательно должна знать как обучали. Так я пойму его условные рефлексы, и какие команды питомец уже знает, какие стоит обучить или даже заново пройти и зафиксировать результат.
+                        Если опыта не было я составляю список команд из ваших пожеланий и причин.</p>
+                </div>
+                <div class="advantages__box third__box">
+                    <div class="advantages__box-title">
+                        Опыт работы
+                    </div>
+                    <p class="advantages__box-text"><span class="advantages__box-span">200</span> дрессированных собак, получивших <span class="advantages__box-span">350</span> наград на разных соревнованиях</p>
+                    <p class="advantages__box-text"><span class="advantages__box-span">100 </span>людей научились правильно дрессировать и общаться со своими питомцами</p>
+                    <p class="advantages__box-text"><span class="advantages__box-span">2600</span> часов совместных занятий и встреч</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="stages" id="stages-id">
+        <div class="container">
+            <div class="stages__title">
+                Этапы дрессировки
+            </div>
+            <div class="stages__items">
+                <div class="stages__item">
+                    <div class="stages__item-num">
+                        01
+                    </div>
+                    <p class="stages__item-text">
+                        Созван по телефону или общение онлайн
+                    </p>
+                </div>
+                <div class="stages__item-under">
+                    <div class="stages__item-num">
+                        02
+                    </div>
+                    <p class="stages__item-text">
+                        Разговариваем про собаку
+                    </p>
+                </div>
+                <div class="stages__item">
+                    <div class="stages__item-num">
+                        03
+                    </div>
+                    <p class="stages__item-text">
+                        Узнаю причины обращения
+                    </p>
+                </div>
+                <div class="stages__item-under">
+                    <div class="stages__item-num">
+                        04
+                    </div>
+                    <p class="stages__item-text">
+                        Узнаю удобное время занятий
+                    </p>
+                </div>
+            </div>
+            
+            <img class="stages__line" src="/dog-project/img_dogs/lines/line.svg" alt="">
+        
+        <div class="stages__items">
+            <div class="stages__item">
+                <div class="stages__item-num">
+                    05
+                </div>
+                <p class="stages__item-text">
+                    Создаю график занятий
+                </p>
+            </div>
+            <div class="stages__item-under">
+                <div class="stages__item-num">
+                    06
+                </div>
+                <p class="stages__item-text">
+                    Скидываю информацию для ознакомления
+                </p>
+            </div>
+            <div class="stages__item">
+                <div class="stages__item-num">
+                    07
+                </div>
+                <p class="stages__item-text">
+                    Знакомство с собакой.
+                </p>
+            </div>
+            <div class="stages__item-under">
+                <div class="stages__item-num">
+                    08
+                </div>
+                <p class="stages__item-text">
+                    Обучение командам
+                </p>
+            </div>
+        </div>
+            
+        </div>
+    </section>
+    
+    <section class="form" id="form-id">
+        <div class="container">
+            <div class="form__inner">
+                <div class="form__items">
+                    <div class="form__item">
+                        <input class="form__input" type="text" placeholder="Ваше имя" >
+                    </div>
+                    <div class="form__item ">
+                        <input class="form__input phone" type="tel" name="phone" id="phone" placeholder="+7(___)___-__-__">
+                    </div>
+                </div>
+                <div class="form__btns">
+                    <div class="form__btn">
+                        <input class="form__btn-checkbox" type="checkbox" id="form__checkbox">
+                        <label for="form__checkbox">Соглашаюсь с <a class="form__checkbox-link" href="#"> условиями </a> обработки данных</label>
+                    </div>
+                    <button class="form__item-btn open-modal-btn-form">Стать учителем четвероного друга</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="reviews" id="reviews-id">
+        <div class="container">
+            <h2 class="reviews__title">
+                Отзывы
+            </h2>
+            <div class="reviews__boxes">
+                <div class="reviews__box reviews__box1">
+                    <p class="reviews__box-text">Я хочу сказать огромное спасибо вам! Вы были с нами в самый сложный момент и только благодаря вам мы смогли преодолеть все трудности.</p>
+                    <p class="reviews__box-name">Леонид Петрович</p>
+                </div>
+                <div class="reviews__box reviews__box2">
+                    <p class="reviews__box-text">Добрый день. Я хочу поделиться искренними эмоциями после занятий с моим любимым кинологом. Она учит понимать, и получать удовольствие от жизни с четвероногим другом. Спасибо вам ещё раз! Надеюсь, что дальше больше и мы с вами ещё много будем вместе радоваться успехам Мари, которых бы не было без вас! Она тот специалист, которого я искала несколько месяцев.</p>
+                    <p class="reviews__box-name">Инна Муравьёва</p>
+                </div>
+                <div class="reviews__box reviews__box3">
+                    <p class="reviews__box-text">Спасибо вам огромное</p>
+                    <p class="reviews__box-name">Александр Н.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="program" id="program-id">
+        <div class="container">
+            <h2 class="program__title">
+                Чему обучю
+            </h2>
+            <div class="program__inner">
+            <div class="program__commands">
+                <p class="program__command-text"> «Перестань тянуть поводок»</p>
+                <p class="program__command-text"> «Рядом»</p>
+                <p class="program__command-text"> «ФАС»</p>
+            </div>
+            
+            <div class="program__line">
+                <p class="program__item-text">КОМАНДЫ</p>
+                <img class="program__line-img" src="/dog-project/img_dogs/lines/line__green.svg" alt="">
+                <p class="program__item-text">10 000₽</p>
+            </div>
+            
+            <div class="program__commands-under">
+                <p class="program__command-text"> «Ко мне»</p>
+                <p class="program__command-text"> «Трио: сидеть, стоять, лежать»</p>
+                <p class="program__command-text"> «ФУ»</p>
+            </div>
+        </div>
+        </div>
+    </section>
+    
+    <section class="form2">
+        <div class="container">
+            <div class="form2__inner">
+                <div class="form2__items">
+                    <div class="form2__item">
+                        <input class="form2__input" type="text" placeholder="Ваше имя">
+                    </div>
+                    <div class="form2__item">
+                        <input class="form2__input phone" type="tel" name="phone" id="phone" placeholder="+7(___)___-__-__">
+                    </div>
+                </div>
+                <div class="form2__btns">
+                    <div class="form2__btn">
+                        <input class="form2__btn-checkbox" type="checkbox" id="form2__checkbox">
+                    <label for="form2__checkbox">Соглашаюсь с <a class="form2__checkbox-link" href="#">условиями</a> обработки данных</label>
+                </div>
+                    <button class="form2__item-btn"><a class="form2__item-btn-link" href="">Стать учителем четвероного друга</a></button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="faq" id="faq-id">
+        <div class="container">
+            <h2 class="faq__heading">
+                Ответы на частые вопросы
+            </h2>
+            <div class="faq__items">
+                <div class="faq__inner faq__item js-faq">
+                    <div class="faq__header js-faq-trigger"> 
+                      <div class="faq__icon">
+                        <img class="faq__icon-minus" src="/dog-project/img_dogs/lines/uparrow.svg" alt="">
+                        <img class="faq__icon-plus" src="/dog-project/img_dogs/lines/downarrow.svg" alt="">
+                       </div>
+                      <div class="faq__title">Можно ли онлайн обучить собаку?</div>
+                    </div>
+                    <div class="faq__text">Возможен онлайн формат обучения. Я не учу собак онлайн в прямом смысле этого слова. Я учу людей взаимодействовать с их шерстяными детьми: правильно интерпретировать сигналы, побеждать страхи и учить новому.</div>
+                  </div>
+                  <div class="faq__inner faq__item js-faq">
+                    <div class="faq__header js-faq-trigger"> 
+                      <div class="faq__icon">
+                        <img class="faq__icon-minus" src="/dog-project/img_dogs/lines/uparrow.svg" alt="">
+                        <img class="faq__icon-plus" src="/dog-project/img_dogs/lines/downarrow.svg" alt="">
+                       </div>
+                      <div class="faq__title">Как происходит оплата?</div>
+                    </div>
+                    <div class="faq__text">Оплата осуществляется через ссылку, полученную от менеджера посредством сообщения в мессенджере, sms или электронной почте (по согласованию). По ссылке вы перейдете на страницу оплаты заказа. Услуга оплаты по картам в Интернете предоставляется РФИ Банком.</div>
+                  </div>
+                  <div class="faq__inner faq__item js-faq">
+                    <div class="faq__header js-faq-trigger"> 
+                      <div class="faq__icon">
+                        <img class="faq__icon-minus" src="/dog-project/img_dogs/lines/uparrow.svg" alt="">
+                        <img class="faq__icon-plus" src="/dog-project/img_dogs/lines/downarrow.svg" alt="">
+                       </div>
+                      <div class="faq__title">Будет ли дальнейшее общение после занятий?</div>
+                    </div>
+                    <div class="faq__text">Да, будет. У меня есть чат. Там всё беседуют, задают друг другу вопросы. Присылают как они занимаются или повторяют всё дома.</div>
+                  </div>
+                  <div class="faq__inner faq__item js-faq">
+                    <div class="faq__header js-faq-trigger"> 
+                      <div class="faq__icon">
+                        <img class="faq__icon-minus" src="/dog-project/img_dogs/lines/uparrow.svg" alt="">
+                        <img class="faq__icon-plus" src="/dog-project/img_dogs/lines/downarrow.svg" alt="">
+                       </div>
+                      <div class="faq__title">Что если не получится?</div>
+                    </div>
+                    <div class="faq__text">В дрессировке и воспитании собаки важно терпение. Проблемы в поведении собаки — это результат неправильных действий человека. Как только начинаешь разбирать свои действия, сразу все встает на свои места. вы можете расчитывать на нашу заботу и поддержку в любой ситуации.</div>
+                  </div>
+                  <div class="faq__inner faq__item js-faq">
+                    <div class="faq__header js-faq-trigger"> 
+                      <div class="faq__icon">
+                        <img class="faq__icon-minus" src="/dog-project/img_dogs/lines/uparrow.svg" alt="">
+                        <img class="faq__icon-plus" src="/dog-project/img_dogs/lines/downarrow.svg" alt="">
+                       </div>
+                      <div class="faq__title">Что я получу в конце?</div>
+                    </div>
+                    <div class="faq__text">Результат дрессировки - это понимание человеком собаки, понимание ее поведения, причин и мотивов тех или иных ее действий.</div>
+                  </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+            <div class="footer__logo">
+                <img class="footer__logo-img" src="/dog-project/img_dogs/header/logo.svg" alt="">
+            </div>
+            <div class="footer__text">
+                <p class="footer__text-inner">© 2022 All rights reserved.</p>
+            </div>
+            <div class="footer__icons">
+                <a class="footer__icons-link" href="#">
+                    <img class="footer__icons-img" src="/dog-project/img_dogs/header/instagram.svg" alt="">
+                </a>
+                <a class="footer__icons-link" href="#">
+                    <img class="footer__icons-img" src="/dog-project/img_dogs/header/vk.svg" alt="">
+                </a>
+                <a class="footer__icons-link" href="#">
+                    <img class="footer__icons-img" src="/dog-project/img_dogs/header/f.svg" alt="">
+                </a>
+                <a class="footer__icons-link" href="#">
+                    <img class="footer__icons-img" src="/dog-project/img_dogs/header/Vector.svg" alt="">
+                </a>
+            </div>
+        </div>
+        </div>
+    </footer>
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" type="text/javascript"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.min.js" type="text/javascript"></script>
+    <script src="main.js"></script>
+</body>
+</html>
