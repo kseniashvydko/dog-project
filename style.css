@@ -830,7 +830,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 86vh;
   }
   .top__header-title {
     font-size: 36px;
@@ -1295,6 +1295,15 @@ body {
   }
 }
 @media (max-width: 520px) {
+  .modal__box {
+    max-width: 350px;
+  }
+  .modal__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 260px;
+  }
   .top__inner {
     max-width: 400px;
     height: 100%;
@@ -1393,6 +1402,16 @@ body {
   }
 }
 @media (max-width: 438px) {
+  .modal__box {
+    max-width: 300px;
+  }
+  .modal__input {
+    width: 260px;
+  }
+  .modal__btn {
+    display: flex;
+    width: 210px;
+  }
   .top__inner {
     max-width: 300px;
   }
@@ -1485,6 +1504,18 @@ body {
   }
 }
 @media (max-width: 350px) {
+  .modal__box {
+    max-width: 270px;
+  }
+  .modal__input {
+    width: 210px;
+  }
+  .modal__btn {
+    width: 180px;
+  }
+  .modal__text-title {
+    font-size: 24px;
+  }
   .expertise__item {
     max-width: 100px;
   }
