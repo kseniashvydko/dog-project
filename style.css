@@ -119,6 +119,7 @@ body {
   font-weight: 500;
   font-size: 16px;
   text-align: center;
+  cursor: pointer;
 }
 
 .modal {
@@ -500,6 +501,7 @@ body {
   font-size: 16px;
   color: #fff;
   margin: 0 auto;
+  cursor: pointer;
 }
 
 .form__inner {
@@ -658,6 +660,7 @@ body {
   border-radius: 4px;
   background-color: #09035d;
   border: none;
+  cursor: pointer;
 }
 .form2__item-btn-link {
   font-weight: 500;
